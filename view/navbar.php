@@ -1,10 +1,5 @@
-<nav class="navbar navbar-expand-sm bg-dark navbar-dark">
-	  <a class="navbar-brand" href="index.php">Home</a>
-	  <div class="collapse navbar-collapse" id="collapsibleNavbar">
-	    <ul class="navbar-nav">	            
-	      <li class="nav-item">
-	        <a class="nav-link" href="#footer">Contact</a>
-	      </li>                    
-      </ul>
-  	</div>
+<nav >
+	<a href="index.php"><img src="../image/favicon.jpg" height="70px" width="70px"></a>
+	<a class="navbar-brand" href="index.php"><h2 style="color: #2F4F4F"><b>Home</b></h2></a>
+	<!-- <a  href="#footer" style="color: #2F4F4F">Contact</a> 	 -->
 </nav>

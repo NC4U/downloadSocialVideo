@@ -1,6 +1,8 @@
-<footer class="py-5 bg-dark" id="footer">
-    <div class="container">
-	    <p class="m-0 text-center text-white">Copyright &copy; HieuPham's website</p>
-    </div>
-      <!-- /.container -->
+<footer  id="footer">
+    <div class="well" id="footer">
+		<div class="centered">
+	      	<span style="text-align:center;display:block; color: #2F4F4F"> Created by HieuPham</span>
+	      	<span style="text-align:center;display:block; color: #2F4F4F"> Gmail: phamminhhieu.hsgs@gmail.com</span>
+	    </div>
+	</div>
 </footer>
