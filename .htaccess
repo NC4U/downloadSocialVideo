@@ -1,0 +1,2 @@
+Rewrite On
+RewriteRule "" "view/index.php"
