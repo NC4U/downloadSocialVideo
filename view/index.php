@@ -100,7 +100,7 @@
 				         
 				            <span class="input-group-btn">
 				                        <button class="btn btn-success" type="button" style="background-color: red;" onclick="var data = document.getElementById('link').value; if (data == '') alert('You have not filled out the link!'); else {document.getElementById;getButtonName();}">
-				                            <span class="glyphicon glyphicon-search" id="getButtonName" style="color: dimgray; font-size: 13px">Search!</span>
+				                            <span class="glyphicon glyphicon-search" id="getButtonName" style="color: white; font-size: 13px">Search!</span>
 				                        </button>
 				                    </span>
 						  
