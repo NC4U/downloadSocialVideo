@@ -14,10 +14,7 @@
 			background-color: #E6E6FA;
 			color: #2F4F4F;
 		}
-		#instruction
-		{
-			white-space: pre;
-		}
+		
 		img 
 		{
 			height: 50px;
@@ -93,13 +90,13 @@
 							<button type="submit" class="btn btn-primary">GO!</button> -->
 							 
 				                <div class="input-group ">
-				                    <input type="text" class="form-control " placeholder="Search here..." name="search" id="link" size="30">
+				                    <input type="text" class="form-control " placeholder="Copy link..." name="search" id="link" size="30">
 				                    
 				                </div>
 
 				         
 				            <span class="input-group-btn">
-				                        <button class="btn btn-success" type="button" style="background-color: red;" onclick="var data = document.getElementById('link').value; if (data == '') alert('You have not filled out the link!'); else {document.getElementById;getButtonName();}">
+				                        <button class="btn btn-success" type="button" style="background-color: #CC0000; border: none;" onclick="var data = document.getElementById('link').value; if (data == '') alert('You have not filled out the link!'); else {document.getElementById;getButtonName();}">
 				                            <span class="glyphicon glyphicon-search" id="getButtonName" style="color: white; font-size: 13px">Search!</span>
 				                        </button>
 				                    </span>
@@ -113,26 +110,46 @@
 						<div id="result-download"></div>
 
 						<div id="instruction">
+							<h3 align="center">Instructions</h3>
 							<b>Step 1:</b> Copy your link of video that you want to download from Yo
-								utube, Instagram, Facebook.
-								Ex: <u>https://www.youtube.com/watch?v=es2T6KY45cA</u>
-								or Copy your link of picture from Instagram.
-								Ex: <u>https://www.instagram.com/p/BnGDarpHVwU/?taken-by=ig_fotografdiyari</u>
-							<b>Step 2:</b> Wait a few seconds...
-								Actually, we also support you to get caption from Youtube
-								Just click on button caption, next to button audio,
-							<b>Step 3:</b> Click on the link with quality you want, then click on download
-								(<span style="color: red">Easily you can just "right click" on the link and choose "Save link as"</span>)
-							<b>Step 4: Enjoy it!</b>
-							If you have any problem or want to download 1080 video or higher, please <a href="#footer">contact us</a>.
+								utube, Instagram, Facebook.<br>
+									  &nbsp;&nbsp;Ex: <u>https://www.youtube.com/watch?v=es2T6KY45cA</u><br>
+									  &nbsp;&nbsp;or Copy your link of picture from Instagram.<br>
+									  &nbsp;&nbsp;Ex: <u>https://www.instagram.com/p/BnGDarpHVwU/?taken-by=ig_fotografdiyari</u><br><br>
+							<b>Step 2:</b> Wait a few seconds...<br>
+									  &nbsp;&nbsp;Actually, we also support you to get caption from Youtube<br>
+									  &nbsp;&nbsp;Just click on button caption, next to button audio,<br><br>
+							<b>Step 3:</b> Click on the link with quality you want, then click on download<br>
+								(<span style="color: red">	Easily you can just "right click" on the link and choose "Save link as"</span>)<br><br>
+							<b>Step 4: Enjoy it!</b><br>
+								  &nbsp;&nbsp;If you have any problem or want to download 1080 video or higher, please <a href="#footer">contact us</a>.<br>
 						</div>
+						<hr>
+						<div class="row row-padded homepage-grid text-center m-t p-l-md p-r-md featured">
+							<div class="col-sm-4">
+							<i class="fas fa-gift" style="font-size: 40px"></i><br><br>
+							<h4 style="color: #C62828"><strong>Miễn phí tải về</strong></h4>
+							<span>Không hạn chế số lần tải về và tất cả đều miễn phí.</span><br>
+							</div>
+							<div class="col-sm-4">
+							<i class="fas fa-video" style="font-size: 40px"></i><br><br>
+							<h4 style="color: #C62828"><strong>Video & MP3</strong></h4>
+							<span>Tải về trực tiếp các file định dạng Video & MP3.</span><br>
+							 </div>
+							<div class="col-sm-4">
+							<i class="far fa-check-circle" style="font-size: 40px"></i><br><br>
+							<h4 style="color: #C62828"><strong>Tải về dễ dàng</strong></h4>
+							<span>Tương thích với tất cả các trình duyệt. Tải không cần phần mềm.</span><br>
+							</div>
+						</div>
+						<br><br>
 						
 					</div>
 					<div class="col-lg-2"></div>
 				</div>
 			</div>
 		
-		<hr>
+		<br>
 		
 		<div id="footer">
 			<?php
@@ -152,11 +169,11 @@
 			if ( i != n ) {
 				document.getElementById(i).style.display = "none";
 				
-				document.getElementById(button).style.background = "gray";
+				document.getElementById(button).style.background = "#dedede";
 			}
 			else {
 				document.getElementById(i).style.display = "block";
-				document.getElementById(button).style.background = "red";
+				document.getElementById(button).style.background = "#CC0000";
 			}
 		}
 	}

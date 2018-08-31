@@ -49,9 +49,9 @@
 		</div>
 		<div class='col-lg-4 text-center' >
 			<div id='myDIV'>
-			  <button class='btn' onclick='checkButton(1);' id='button1' style='background:gray'>video</button>
-			  <button class='btn' onclick='checkButton(2);' id='button2' style='background:gray'>audio</button>
-			  <button class='btn' onclick='checkButton(3);' id='button3' style='background:gray'>caption</button>
+			  <button class='btn ' onclick='checkButton(1);' id='button1' style='background:#dedede'>video</button>
+			  <button class='btn' onclick='checkButton(2);' id='button2' style='background:#dedede'>audio</button>
+			  <button class='btn' onclick='checkButton(3);' id='button3' style='background:#dedede'>caption</button>
 			</div><hr>
 			<div id='1'>
 		";
