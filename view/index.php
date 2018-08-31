@@ -4,7 +4,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Home</title>
+	<title>Total Video Download from Facebook, Youtube ...</title>
 	<?php
 		include 'header.php';
 	?>
@@ -79,28 +79,36 @@
 				<div class="row">
 					<div class="col-lg-2"></div>
 					<div class="col-lg-8" style="background-color: #F8F8FF">
-						<h2 align="center" style="color: #2F4F4F"> Downloading video and audio now is so easy!</h2>
+						<h2 align="center" style="color: #2F4F4F"> Total Video Download from Facebook, Youtube ...</h2>
 						<div class="text-center">
 							<img src="../image/youtube.png">
 							<img src="../image/facebook.png">
 							<img src="../image/instagram.png">
 						</div><br>
-						<form  action="" method=""  class="d-flex justify-content-center" >
+						<div class="row">
+							<div class="col-lg-2"></div>
+						<div class="col-lg-8 " align="center">
+							<form  action="" method=""  class="d-flex justify-content-center" >
 							<!-- <input type="text" placeholder="Search here..." name="search" id="link" width="500px" height="50px" required>
 							<button type="submit" class="btn btn-primary">GO!</button> -->
-							 <div id="custom-search-input">
+							 
 				                <div class="input-group ">
-				                    <input type="text" class="form-control " placeholder="Search here..." name="search" id="link" size="50">
-				                    <span class="input-group-btn">
-				                        <button class="btn btn-success" type="button" onclick="var data = document.getElementById('link').value; if (data == '') alert('You have not filled out the link!'); else {document.getElementById;getButtonName();}">
-				                            <b class="glyphicon glyphicon-search" id="getButtonName" style="color: gray11">Search!</b>
+				                    <input type="text" class="form-control " placeholder="Search here..." name="search" id="link" size="30">
+				                    
+				                </div>
+
+				         
+				            <span class="input-group-btn">
+				                        <button class="btn btn-success" type="button" style="background-color: red;" onclick="var data = document.getElementById('link').value; if (data == '') alert('You have not filled out the link!'); else {document.getElementById;getButtonName();}">
+				                            <span class="glyphicon glyphicon-search" id="getButtonName" style="color: dimgray; font-size: 13px">Search!</span>
 				                        </button>
 				                    </span>
-				                </div>
-				            </div>
 						  
 
 						</form>	
+						</div>
+						<div class="col-lg-2"></div>
+						</div>
 						<hr>			
 						<div id="result-download"></div>
 
