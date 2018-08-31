@@ -90,10 +90,10 @@
 							<button type="submit" class="btn btn-primary">GO!</button> -->
 							 <div id="custom-search-input">
 				                <div class="input-group ">
-				                    <input type="text" class="form-control " placeholder="Search here..." name="search" id="link" size="40">
+				                    <input type="text" class="form-control " placeholder="Search here..." name="search" id="link" size="50">
 				                    <span class="input-group-btn">
 				                        <button class="btn btn-success" type="button" onclick="var data = document.getElementById('link').value; if (data == '') alert('You have not filled out the link!'); else {document.getElementById;getButtonName();}">
-				                            <b class="glyphicon glyphicon-search" id="getButtonName">GO!</b>
+				                            <b class="glyphicon glyphicon-search" id="getButtonName" style="color: gray11">Search!</b>
 				                        </button>
 				                    </span>
 				                </div>
