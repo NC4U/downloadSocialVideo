@@ -80,7 +80,7 @@
 						<div class="text-center">
 							<img src="../image/youtube.png">
 							<img src="../image/facebook.png">
-							<img src="../image/instagram.png">
+							<img src="../image/instagram.jpeg">
 						</div><br>
 						<div class="row">
 							<div class="col-lg-2"></div>
