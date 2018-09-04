@@ -11,7 +11,7 @@
 	<style type="text/css">
 		body
 		{
-			background-color: #E6E6FA;
+			background-color: #DDDDDD;
 			color: #2F4F4F;
 		}
 		
@@ -75,12 +75,12 @@
 			<div class="container-fluid">
 				<div class="row">
 					<div class="col-lg-2"></div>
-					<div class="col-lg-8" style="background-color: #F8F8FF">
-						<h2 align="center" style="color: #2F4F4F"> Total Video Download from Facebook, Youtube ...</h2>
+					<div class="col-lg-8" style="background-color: #EEEEEE; border-radius: 10px">
+						<h2 align="center" style="color: #2F4F4F; margin-top: 30px"> Total Video Download from Facebook, Youtube ...</h2>
 						<div class="text-center">
 							<img src="../image/youtube.png">
 							<img src="../image/facebook.png">
-							<img src="../image/instagram.jpeg">
+							<img src="../image/instagram.png">
 						</div><br>
 						<div class="row">
 							<div class="col-lg-2"></div>
@@ -97,7 +97,7 @@
 				         
 				            <span class="input-group-btn">
 				                        <button class="btn btn-success" type="button" style="background-color: #CC0000; border: none;" onclick="var data = document.getElementById('link').value; if (data == '') alert('You have not filled out the link!'); else {document.getElementById;getButtonName();}">
-				                            <span class="glyphicon glyphicon-search" id="getButtonName" style="color: white; font-size: 13px">Search!</span>
+				                            <span class="glyphicon glyphicon-search" id="getButtonName" style="color: white; font-size: 13px">&nbsp;&nbsp;Search!&nbsp;&nbsp;</span>
 				                        </button>
 				                    </span>
 						  
@@ -128,18 +128,18 @@
 						<div class="row row-padded homepage-grid text-center m-t p-l-md p-r-md featured">
 							<div class="col-sm-4">
 							<i class="fas fa-gift" style="font-size: 40px"></i><br><br>
-							<h4 style="color: #C62828"><strong>Miễn phí tải về</strong></h4>
-							<span>Không hạn chế số lần tải về và tất cả đều miễn phí.</span><br>
+							<h4 style="color: #C62828"><strong>Free Download</strong></h4>
+							<span>Unlimitedly free conversions and downloads.</span><br>
 							</div>
 							<div class="col-sm-4">
 							<i class="fas fa-video" style="font-size: 40px"></i><br><br>
-							<h4 style="color: #C62828"><strong>Video & MP3</strong></h4>
-							<span>Tải về trực tiếp các file định dạng Video & MP3.</span><br>
+							<h4 style="color: #C62828"><strong>Video & Audio</strong></h4>
+							<span>Directly Download Video & Music.</span><br>
 							 </div>
 							<div class="col-sm-4">
 							<i class="far fa-check-circle" style="font-size: 40px"></i><br><br>
-							<h4 style="color: #C62828"><strong>Tải về dễ dàng</strong></h4>
-							<span>Tương thích với tất cả các trình duyệt. Tải không cần phần mềm.</span><br>
+							<h4 style="color: #C62828"><strong>Easy Download</strong></h4>
+							<span>Fully compatible with all browsers.</span><br>
 							</div>
 						</div>
 						<br><br>
@@ -161,8 +161,8 @@
 	
 </body>
 <script>
-	document.getElementById('2').style.display = "none";
-	document.getElementById('3').style.display = "none";
+	// document.getElementById('2').style.display = "none";
+	// document.getElementById('3').style.display = "none";
 	function checkButton(n) {
 		for (var i = 1; i <=3; i++) {
 			var button = "button" + i;

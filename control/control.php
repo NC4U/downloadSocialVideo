@@ -35,6 +35,7 @@
 		parse_str($data);
 		$arr = explode(",", $url_encoded_fmt_stream_map);
 		$videoNumber = 0;
+		// Paste data :))))))))))))), de array la ngon roi.
 		$text = "
 		<div class = 'row' id='result-youtube'>
 		<div class='col-lg-4' >
@@ -49,9 +50,9 @@
 		</div>
 		<div class='col-lg-4 text-center' >
 			<div id='myDIV'>
-			  <button class='btn ' onclick='checkButton(1);' id='button1' style='background:#dedede'>video</button>
-			  <button class='btn' onclick='checkButton(2);' id='button2' style='background:#dedede'>audio</button>
-			  <button class='btn' onclick='checkButton(3);' id='button3' style='background:#dedede'>caption</button>
+			  <button class='btn ' onclick='checkButton(1);' id='button1' style='background:#CC0000; color:white'>video</button>
+			  <button class='btn' onclick='checkButton(2);' id='button2' style='background:#dedede; color:white'>audio</button>
+			  <button class='btn' onclick='checkButton(3);' id='button3' style='background:#dedede; color:white'>caption</button>
 			</div><hr>
 			<div id='1'>
 		";
@@ -72,7 +73,7 @@
             	$text.= "<a href='".$vdata['url']."'>1080p-video only-".$vdata['type']."</a><br><br>";
         	}
     	}
-    	$text.= "</div><hr><div id='2'>";     	
+    	$text.= "</div><div id='2' style='display:none'>";     	
     	for ($i = 0; $i <count($arr); $i++) {
         	parse_str($arr[$i], $vdata);
         	$vdata['type'] = str_replace(strstr($vdata['type'],';'), "", $vdata['type']);
@@ -80,7 +81,7 @@
             	$text.= "<a href='".$vdata['url']."'>".$vdata['type']."</a><br><br>";
         	}
     	}
-    	$text.="</div><hr><div id='3'>";
+    	$text.="</div><div id='3' style='display:none'>";
 
 		//MP3
 		// echo "<iframe style='background: #fff;min-height:120px;min-width:320px' src='http://api.youtube6download.top/fetch/query.php?i=$id' width='auto' marginheight='0' marginwidth='0' scrolling='No' frameborder='0'></iframe><hr>";
@@ -92,14 +93,54 @@
 		$json = json_decode($str, true);
 		// Them bien caption de kiem tra xem co caption khong
 		// Hoac vao kiem tra mang xem co ton tai hay khong cho nhanh
+
+		function convertLanguage($language){
+			switch ($language) {
+				case 'en':
+					$language = "English";
+					break;
+				case 'vi':
+					$language = "Vietnamese";
+					break;
+				case 'es':
+					$language = "Espanol";
+					break;
+				case 'fr':
+					$language = "French";
+					break;
+				case 'it':
+					$language = "Italian";
+					break;
+				case 'de':
+					$language = "Deutsch";
+					break;
+				case 'id':
+					$language = "Indonesian";
+					break;
+				case 'jp':
+					$language = "Japanese";
+					break;
+				case 'kr':
+					$language = "Korean";
+					break;
+				case 'pt':
+					$language = "Portuguese";
+					break;
+				default:
+					# code...
+					break;
+			}
+
+			return $language;
+		}
 		
 		for ($i = 0; $i < count($json['items']); $i++ ) {
 		  
 			if ($json['items'][$i]['snippet']['trackKind'] == "ASR") {
-				$text.= "<a href='../control/downloadCaption.php?language=".$json['items'][$i]['snippet']['language'] ."&name=".$json['items'][$i]['snippet']['name']."&videoId=".$id. "' >Language: ".$json['items'][$i]['snippet']['language']."</a>--";
-				$text.= "Phụ đề này được dịch tự động, Lúc có nội dung, lúc không @@<br><br><br>";
+				$text.= "<a href='../control/downloadCaption.php?language=".$json['items'][$i]['snippet']['language'] ."&name=".$json['items'][$i]['snippet']['name']."&videoId=".$id. "' >Language: ".convertLanguage($json['items'][$i]['snippet']['language'])."</a> ";
+				$text.= "(Translate automatically)<br>";
 			} else {
-				$text.= "<a href='../control/downloadCaption.php?language=".$json['items'][$i]['snippet']['language'] ."&name=".$json['items'][$i]['snippet']['name']."&videoId=".$id. "'>Language: ".$json['items'][$i]['snippet']['language']."</a><br><br>";
+				$text.= "<a href='../control/downloadCaption.php?language=".$json['items'][$i]['snippet']['language'] ."&name=".$json['items'][$i]['snippet']['name']."&videoId=".$id. "'>Language: ".convertLanguage($json['items'][$i]['snippet']['language'])."</a><br><br>";
 			}
 
 	  	}
