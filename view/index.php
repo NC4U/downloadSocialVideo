@@ -114,8 +114,8 @@
 							<b>Step 1:</b> Copy your link of video that you want to download from Yo
 								utube, Instagram, Facebook.<br>
 									  &nbsp;&nbsp;Ex: <u>https://www.youtube.com/watch?v=es2T6KY45cA</u><br>
-									  &nbsp;&nbsp;or Copy your link of picture from Instagram.<br>
-									  &nbsp;&nbsp;Ex: <u>https://www.instagram.com/p/BnGDarpHVwU/?taken-by=ig_fotografdiyari</u><br><br>
+									  &nbsp;&nbsp;or Copy your link of facebook's video.<br>
+									  &nbsp;&nbsp;Ex: <u>https://www.facebook.com/subfactoryVN/videos/461013434394811/</u><br><br>
 							<b>Step 2:</b> Wait a few seconds...<br>
 									  &nbsp;&nbsp;Actually, we also support you to get caption from Youtube<br>
 									  &nbsp;&nbsp;Just click on button caption, next to button audio,<br><br>
