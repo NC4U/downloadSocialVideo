@@ -1,5 +1,5 @@
 <?php
-	//check link
+	//check linksssss
 	class Validation {
 
 		// use pre_match is another way :D
